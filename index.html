@@ -1,64 +1,32 @@
-public class FrontEndDeveloper {
-    private String name;
-    private String professionalGoal;
-    private String[] projects;
-    private String[] workExperience;
-    private String education;
-    private String photo;
-    private String contacts;
-    private String[] techSkills;
-    private String[] softSkills;
-
-    public FrontEndDeveloper(String name, String professionalGoal, String[] projects, String[] workExperience, String education, String photo, String contacts, String[] techSkills, String[] softSkills) {
-        this.name = name;
-        this.professionalGoal = professionalGoal;
-        this.projects = projects;
-        this.workExperience = workExperience;
-        this.education = education;
-        this.photo = photo;
-        this.contacts = contacts;
-        this.techSkills = techSkills;
-        this.softSkills = softSkills;
-    }
-
-    public void displayProfile() {
-        System.out.println("Name: " + name);
-        System.out.println("Professional Goal: " + professionalGoal);
-        System.out.println("Projects:");
-        for (String project : projects) {
-            System.out.println(" - " + project);
-        }
-        System.out.println("Work Experience:");
-        for (String experience : workExperience) {
-            System.out.println(" - " + experience);
-        }
-        System.out.println("Education: " + education);
-        System.out.println("Photo: " + photo);
-        System.out.println("Contacts: " + contacts);
-        System.out.println("Tech Skills:");
-        for (String skill : techSkills) {
-            System.out.println(" - " + skill);
-        }
-        System.out.println("Soft Skills:");
-        for (String skill : softSkills) {
-            System.out.println(" - " + skill);
-        }
-    }
-
-    public static void main(String[] args) {
-        String name = "Vasuluna Goitinska";
-        String professionalGoal = "Front-End Developer";
-        String[] projects = {"https://www.google.com/ [ HTML5, CSS3 ]", "https://www.google.com/ [ JavaScript ]", "https://www.google.com/ [ React.js, Node.js ]"};
-        String[] workExperience = {"Front-End Developer Freelance\nSeptember 2019 - up to now | Country\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus commodo viverra maecenas. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-                                    "Manager Banderogusak & Co.\nMarch 2015 - October 2020 | Country\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas.",
-                                    "Manager BestUA Corp.\nMarch 2013 - October 2015 | Country\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas."};
-        String education = "National University of Management\nManagement September 2009 - June 2015 | Country";
-        String photo = "My foto";
-        String contacts = "C: +380665670010\nE: vasuluna@gmail.com";
-        String[] techSkills = {"HTML5", "CSS3", "GIT", "WebPack", "JavaScript", "React.js", "Node.js"};
-        String[] softSkills = {"Scrum", "Agile", "GTD", "Teamwork"};
-
-        FrontEndDeveloper developer = new FrontEndDeveloper(name, professionalGoal, projects, workExperience, education, photo, contacts, techSkills, softSkills);
-        developer.displayProfile();
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-wsdth, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-wsdth, initial-scale=1.0">
+        <title>My resume</title>
+        <!-- Wrapper -->
+        <div>
+            <!-- main content -->
+            <section>
+                <!-- <div> -->
+                <!-- About me -->
+                <div>
+                    <h2>Frount-End Developer</h2>
+                    <h1>Vasulana Goitinska</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas 
+                        accumsan lacus vel facilisis.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
